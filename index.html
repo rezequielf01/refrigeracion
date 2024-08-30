@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>EF Refrigeración</title>
+      <meta name="keywords" content="Servicio técnico especializado en refrigeración y electricidad">
+      <meta name="description" content="Servicio técnico especializado en refrigeración y electricidad">
+      <meta name="author" content="@efwebdesigns">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+
+      <!-- WSP BTN -->
+       <a href="https://wa.me/1164528889?text=¡Hola estoy interesad@ en tus servicios!" target="_blank" class="wsp-btn">
+         <ion-icon name="logo-whatsapp"></ion-icon>
+       </a>
+
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index.html">Inicio </a>
+         <a href="#about">Nosotros</a>
+         <a href="#service">Servicios  </a>
+         <a href="#vehicles">Galeria</a>
+         <a href="#testimonial">Referencias</a>
+         <a href="#contact">Contacto</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                     <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                     <div class="right_bottun">
+                        <ul class="conat_info d_none ">
+                           <li><a title="Facebook" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                           <li><a title="Instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide banner_slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-5">
+                              <div class="text-bg">
+                                 <h1>Servicio técnico de refrigeración y electricidad</h1>
+                                 <span>Soluciones confiables en refrigeración y electricidad</span>
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="ban_track">
+                                       <figure><img src="images/track.png" alt="#"/></figure>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <form class="transfot" id="contactForm">
+                                       <div class="col-md-12">
+                                          <span>¿Necesitas asesorarte?</span>
+                                          <h3>Contactános</h3>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Nombre*" type="text" name="nombre" id="nombre" required>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Localidad*" type="text" name="localidad" id="localidad" required>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Dirección*" type="text" name="direccion" id="direccion" required>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Email" type="text" name="email" id="email">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <select class="transfot_form" name="servicio" id="servicio" required>
+                                             <option value="" disabled selected>Seleccione un servicio *</option>
+                                             <option value="Instalacion">Instalacion</option>
+                                             <option value="Mantenimiento">Mantenimiento</option>
+                                             <option value="Carga de refrigerantes">Carga de refrigerantes</option>
+                                             <option value="Verificaciones">Verificaciones</option>
+                                             <option value="Otros">Otros</option>
+                                          </select>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <button class="get_now" id="sendButton">Enviar</button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>   
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- about section -->
+      <div id="about" class="about ">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="about_right">
+                     <figure><img src="images/about.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2>Sobre nosotros</h2>
+                     <p>
+                        En nuestra empresa, nos especializamos en servicios de refrigeración y electricidad. Con un enfoque en la precisión y la fiabilidad, garantizamos que sus sistemas funcionen de manera óptima y eficiente. Nuestra experiencia abarca desde instalaciones hasta reparaciones, ofreciendo soluciones de calidad adaptadas a sus necesidades. 
+                     </p>
+                     <!-- <a class="read_more" href="#">Read More</a> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section -->
+      <!-- service section -->
+      <div id="service" class="service">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2>Nuestros servicios</h2>
+                     <p>Ofrecemos una amplia gama de servicios en refrigeración y electricidad, adaptados a sus necesidades específicas. Desde instalaciones y mantenimiento hasta reparaciones especializadas, nuestro equipo se compromete a brindar soluciones confiables y eficientes para mantener sus sistemas en perfecto estado.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="service_main">
+                     <div class="service_box blu_colo">
+                        <i><img src="images/ser1.png" alt="#"/></i>
+                        <h4>Instalación y mantenimiento de sistemas de refrigeración</h4>
+                     </div>
+                     <div class="service_box yelldark_colo">
+                        <i><img src="images/ser2.png" alt="#"/></i>
+                        <h4>Reparación de unidades de refrigeración</h4>
+                     </div>
+                     <div class="service_box yell_colo">
+                        <i><img src="images/ser3.png" alt="#"/></i>
+                        <h4>Carga de refrigerantes</h4>
+                     </div>
+                     <div class="service_box yelldark_colo">
+                        <i><img src="images/ser4.png" alt="#"/></i>
+                        <h4>Instalación y sustitución de circuitos eléctricos y cableado</h4>
+                     </div>
+                     <div class="service_box yell_colo">
+                        <i><img src="images/ser5.png" alt="#"/></i>
+                        <h4>Verificaciones y cumplimientos de normativas</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end service section -->
+      <!-- vehicles section -->
+      <section id="vehicles" class="vehicles">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Nuestra galería</h2>
+                     <p>Te mostramos algúnos de nuestros trabajos</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="veh" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#veh" data-slide-to="0" class="active"></li>
+               <li data-target="#veh" data-slide-to="1"></li>
+               <li data-target="#veh" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc1.jpeg" alt="#"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc2.jpeg" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co">Refrigeración</h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc3.jpeg" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc4.jpeg" alt="#"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc5.jpeg" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co">Refrigeración</h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc6.jpeg" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc7.jpeg" alt="#"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc8.jpeg" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co">Electricidad</h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/truc9.jpeg" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#veh" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#veh" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </div>
+      </section>
+      <!-- end vehicles section -->
+      <!-- testimonial section -->
+      <div id="testimonial" class="testimonial bottom_cross bottom_cross2">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Referencias</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="testimonial_box">
+                                          <figure><img src="images/our.png" alt="#"/></figure>
+                                          <h3>Valeria F.<br><span class="kisu">Clienta</span></h3>
+                                          <p>¡Excelente experiencia. Necesitaba una instalación rápida de aire acondicionado y ellos llegaron puntuales y listos para trabajar. El técnico fue muy profesional y explicó todo el proceso. Además, hicieron un mantenimiento preventivo de mis sistemas eléctricos que no sabía que necesitaba. Definitivamente los recomendaría a cualquiera que necesite un servicio confiable y de calidad.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="testimonial_box">
+                                          <figure><img src="images/our.png" alt="#"/></figure>
+                                          <h3>Carlos M.<br><span class="kisu">Cliente</span></h3>
+                                          <p>Tuve un problema con el sistema de refrigeración de mi oficina y llamé a Servicio de Refrigeración y Electricidad Martínez. Desde el primer contacto, fueron muy atentos y efectivos. El técnico que vino a reparar el sistema fue rápido y solucionó el problema en poco tiempo.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="full cross_layout">
+                                          <div class="testimonial_box">
+                                             <figure><img src="images/our.png" alt="#"/></figure>
+                                             <h3>Laura G.<br><span class="kisu">Clienta</span></h3>
+                                             <p>Contraté a ElectroRefrigeración del Norte para la instalación de un nuevo sistema de aire acondicionado y estoy muy satisfecha con el resultado. El equipo llegó a tiempo, hizo una instalación impecable y se aseguró de que todo funcionara perfectamente antes de irse.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <i class="fa fa-caret-left" aria-hidden="true"></i>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <i class="fa fa-caret-right" aria-hidden="true"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial section -->
+      <!-- choose section -->
+      <div class="choose">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>¿Por qué elegirnos?</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="choose_box">
+                     <i><img src="images/why1.png" alt="#"/></i>
+                     <h3>Experiencia y profesionalismo</h3>
+                     <p>Contamos con un equipo de técnicos altamente capacitados y con años de experiencia en refrigeración y electricidad. Nuestra trayectoria y conocimiento nos permiten abordar cualquier desafío con precisión y eficiencia, garantizando resultados de alta calidad y un servicio confiable</p>
+                  </div>
+               </div>
+               <div class="col-md-5 offset-md-2">
+                  <div class="choose_box">
+                     <i><img src="images/why2.png" alt="#"/></i>
+                     <h3>Atención personalizada</h3>
+                     <p>Entendemos que cada cliente y proyecto es único. Ofrecemos un enfoque personalizado, adaptando nuestras soluciones a las necesidades específicas de cada caso. Desde la instalación hasta el mantenimiento y reparación, trabajamos para asegurar que nuestros servicios se ajusten perfectamente a sus requerimientos y expectativas</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end choose section -->
+      <!-- contact section -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Contactános</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="con_bg">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-5">
+                     <form id="request" class="main_form">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Nombre*" type="type" name="nombre2" id="nombre2" required> 
+                           </div>
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Localidad*" type="type" name="localidad2" id="localidad2" required> 
+                           </div>
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Dirección*" type="type" name="direccion2" id="direccion2" required> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Email" type="type" name="email2" id="email2"> 
+                           </div>
+                           <div class="col-md-12">
+                              <select class="transfot_form" name="servicio2" id="servicio2" required>
+                                 <option value="" disabled selected>Seleccione un servicio*</option>
+                                 <option value="Instalacion">Instalacion</option>
+                                 <option value="Mantenimiento">Mantenimiento</option>
+                                 <option value="Carga de refrigerantes">Carga de refrigerantes</option>
+                                 <option value="Verificaciones">Verificaciones</option>
+                                 <option value="Otros">Otros</option>
+                              </select>
+                              
+                           </div>
+                           <div class="col-md-12">
+                              <button class="send_btn">Enviar</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="co_tru">
+                        <figure><img src="images/truc4.png" alt="#"/></figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact section -->
+      <!--  footer -->
+      <footer>
+         <div class="footer bottom_cross1">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <ul class="location_icon">
+                        <li><a href="https://maps.app.goo.gl/1T75qQMMWA9RcYXj7"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Dirección : Lorem Ipsum <br> is simply dummy 
+                        </li>
+                        <li><a href="tel:+541164528889"><i class="fa fa-phone" aria-hidden="true"></i></a>Telefono :  11 6452-8889</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Email : demo@gmail.com</li>
+                     </ul>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="map">
+                        <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.23949906467!2d-58.43329845000001!3d-34.615823750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1725001273477!5m2!1ses-419!2sar" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2024 - Diseñado por EFWebDesigns</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+
+      <script>
+         function openNav() {
+           document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+         }
+      </script>
+
+      <script>
+         document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Verificar si el formulario es válido
+            if (this.checkValidity()) {
+               event.preventDefault(); // Previene el envío del formulario
+
+               var nombre = document.getElementById('nombre').value.trim();
+               var localidad = document.getElementById('localidad').value.trim();
+               var direccion = document.getElementById('direccion').value.trim();
+               var email = document.getElementById('email').value.trim();
+               var servicio = document.getElementById('servicio').value;
+
+               var mensaje = `Nombre: ${nombre}%0ALocalidad: ${localidad}%0ADirección: ${direccion}%0AEmail: ${email}%0AServicio: ${servicio}`;
+               var telefono = '1164528889'; // Reemplaza con el número de teléfono de WhatsApp
+
+               var url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+               window.location.href = url;
+            }
+         });
+      </script>
+
+      <script>
+         document.getElementById('request').addEventListener('submit', function(event) {
+            // Verificar si el formulario es válido
+            if (this.checkValidity()) {
+               event.preventDefault(); // Previene el envío del formulario
+
+               var nombre2 = document.getElementById('nombre2').value.trim();
+               var localidad2 = document.getElementById('localidad2').value.trim();
+               var direccion2 = document.getElementById('direccion2').value.trim();
+               var email2 = document.getElementById('email2').value.trim();
+               var servicio2 = document.getElementById('servicio2').value;
+
+               // Construir el mensaje para WhatsApp
+               var mensaje = `Nombre: ${nombre2}%0ALocalidad: ${localidad2}%0ADirección: ${direccion2}%0AEmail: ${email2}%0AServicio: ${servicio2}`;
+               var telefono = '1164528889'; // Reemplaza con el número de teléfono de WhatsApp
+
+               var url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+               window.location.href = url;
+            }
+         });
+      </script>
+
+   </body>
+</html>
+
