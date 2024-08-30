@@ -63,6 +63,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+    .logo-a__img1{
+        display: none;
+    }
+
+    .logo-a__img2{
+        display: block;
+    }
+
     .text-bg h1 {
         font-size: 43px;
         padding-bottom: 20px;
@@ -70,7 +79,8 @@
     }
     .banner_main {
         padding: 152px 0px 0px 0px;
-        background-color: #cacaca !important;
+        background-color: #0f98f8 !important;
+        color: white;
         background: inherit;
         min-height: 919px;
     }
@@ -82,6 +92,9 @@
     }
     #banner1 a.carousel-control-prev {
         top: 41%;
+    }
+    .text-bg h1 {
+        color: white;
     }
     .titlepage h2 {
         font-size: 37px;
@@ -122,9 +135,19 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+
+    .logo-a__img1{
+        display: none;
+    }
+
+    .logo-a__img2{
+        display: block;
+    }
+
     .banner_main {
         padding: 152px 0px 90px 0px;
-        background-color: #cacaca !important;
+        background-color: #0f98f8 !important;
+        color: white;
         background: inherit;
     }
     .banner_slide {
@@ -204,9 +227,19 @@
         float: left;
         margin-top: 0px !important;
     }
+
+    .logo-a__img1{
+        display: none;
+    }
+
+    .logo-a__img2{
+        display: block;
+    }
+
     .banner_main {
         padding: 152px 0px 90px 0px;
-        background-color: #cacaca !important;
+        background-color: #0f98f8 !important;
+        color: white;
         background: inherit;
     }
     .banner_slide {
@@ -225,6 +258,7 @@
     .text-bg h1 {
         font-size: 36px;
         line-height: 51px;
+        color: white;
     }
     #banner1 a.carousel-control-prev {
         top: 44%;

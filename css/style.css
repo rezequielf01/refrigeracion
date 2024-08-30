@@ -315,6 +315,10 @@ button {
      padding-top: 12px;
 }
 
+.logo-a__img2{
+     display: none;
+ }
+
 ul.conat_info li {
      display: inline-block;
      padding: 0 26px;
