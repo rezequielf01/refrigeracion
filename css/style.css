@@ -1005,6 +1005,8 @@ ul.conat_info li a:hover {
 
 ul.location_icon {
      padding-top: 12px;
+     display: flex;
+     flex-direction: column;
 }
 
 ul.location_icon li {
