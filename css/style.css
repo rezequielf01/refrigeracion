@@ -582,7 +582,9 @@ ul.conat_info li a:hover {
 
 .service_box i img {
      text-align: center;
-     padding-top: 33%;
+     width: 100%;
+     height: 100%;
+     padding: 50px;
 }
 
 .service_box h4 {
@@ -784,6 +786,11 @@ ul.conat_info li a:hover {
 
 .kisu {
      font-size: 17px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 5px;
+     color: #efb810;
 }
 
 .testimonial_Carousel .carousel-caption {
@@ -794,6 +801,9 @@ ul.conat_info li a:hover {
 .testimonial_box figure {
      margin: 0;
      float: left;
+     width: 125px;
+     height: 125px;
+     max-height: 125px;
 }
 
 #myCarousel .carousel-indicators {
@@ -863,6 +873,11 @@ ul.conat_info li a:hover {
 .choose_box i {
      float: left;
      padding-right: 20px;
+     margin-bottom: 20px;
+}
+
+.choose_box i img{
+     width: 35%;
 }
 
 .choose_box h3 {
@@ -968,6 +983,7 @@ ul.conat_info li a:hover {
 
 .co_tru figure img {
      width: 100%;
+     max-height: 500px;
 }
 
 
