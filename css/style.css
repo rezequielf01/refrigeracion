@@ -223,7 +223,7 @@ button {
      background: #25d366;
      position: fixed;
      z-index: 500;
-     right: 15px;
+     right: 10px;
      bottom: 30px;
      color: white;
      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -818,10 +818,10 @@ ul.conat_info li a:hover {
 
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
-     width: 50px;
-     height: 50px;
+     width: 40px;
+     height: 40px;
      background: #efedf0;
-     opacity: 1;
+     opacity: 0.7;
      font-size: 30px;
      color: #000;
      border-radius: 5px;
@@ -838,13 +838,13 @@ ul.conat_info li a:hover {
 #myCarousel a.carousel-control-prev {
      position: absolute;
      left: inherit;
-     right: -5%;
+     right: -3%;
      top: 32%;
 }
 
 #myCarousel a.carousel-control-next {
      position: absolute;
-     right: -5%;
+     right: -3%;
      bottom: 10px;
      top: 52%;
 }
