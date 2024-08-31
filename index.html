@@ -151,26 +151,26 @@
       </section>
       <!-- end banner -->
       <!-- about section -->
-      <div id="about" class="about ">
+      <div id="about" class="about fade-in fade-in-left">
          <div class="container">
-            <div class="row d_flex">
-               <div class="col-md-6">
-                  <div class="about_right">
-                     <figure><img src="images/about.png" alt="#"/></figure>
-                  </div>
+           <div class="row d_flex">
+             <div class="col-md-6">
+               <div class="about_right">
+                 <figure><img src="images/about.png" alt="#"/></figure>
                </div>
-               <div class="col-md-6">
-                  <div class="titlepage">
-                     <h2>Sobre nosotros</h2>
-                     <p>
-                        En nuestra empresa, nos especializamos en servicios de refrigeración y electricidad. Con un enfoque en la precisión y la fiabilidad, garantizamos que sus sistemas funcionen de manera óptima y eficiente. Nuestra experiencia abarca desde instalaciones hasta reparaciones, ofreciendo soluciones de calidad adaptadas a sus necesidades. 
-                     </p>
-                     <!-- <a class="read_more" href="#">Read More</a> -->
-                  </div>
+             </div>
+             <div class="col-md-6">
+               <div class="titlepage">
+                 <h2>Sobre nosotros</h2>
+                 <p>
+                   En nuestra empresa, nos especializamos en servicios de refrigeración y electricidad. Con un enfoque en la precisión y la fiabilidad, garantizamos que sus sistemas funcionen de manera óptima y eficiente. Nuestra experiencia abarca desde instalaciones hasta reparaciones, ofreciendo soluciones de calidad adaptadas a sus necesidades.
+                 </p>
+                 <!-- <a class="read_more" href="#">Read More</a> -->
                </div>
-            </div>
+             </div>
+           </div>
          </div>
-      </div>
+       </div>
       <!-- about section -->
       <!-- service section -->
       <div id="service" class="service">
@@ -186,27 +186,27 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="service_main">
-                     <div class="service_box blu_colo">
-                        <i><img src="images/ser1.png" alt="#"/></i>
-                        <h4>Instalación y mantenimiento de sistemas de refrigeración</h4>
+                     <div class="service_box fade-in fade-in-right blu_colo">
+                       <i><img src="images/ser1.png" alt="#"/></i>
+                       <h4>Instalación y mantenimiento de sistemas de refrigeración</h4>
                      </div>
-                     <div class="service_box yelldark_colo">
-                        <i><img src="images/ser2.png" alt="#"/></i>
-                        <h4>Reparación de unidades de refrigeración</h4>
+                     <div class="service_box fade-in fade-in-right yelldark_colo">
+                       <i><img src="images/ser2.png" alt="#"/></i>
+                       <h4>Reparación de unidades de refrigeración</h4>
                      </div>
-                     <div class="service_box yell_colo">
-                        <i><img src="images/ser3.png" alt="#"/></i>
-                        <h4>Carga de refrigerantes</h4>
+                     <div class="service_box fade-in fade-in-right yell_colo">
+                       <i><img src="images/ser3.png" alt="#"/></i>
+                       <h4>Carga de refrigerantes</h4>
                      </div>
-                     <div class="service_box yelldark_colo">
-                        <i><img src="images/ser4.png" alt="#"/></i>
-                        <h4>Instalación y sustitución de circuitos eléctricos y cableado</h4>
+                     <div class="service_box fade-in fade-in-right yelldark_colo">
+                       <i><img src="images/ser4.png" alt="#"/></i>
+                       <h4>Instalación y sustitución de circuitos eléctricos y cableado</h4>
                      </div>
-                     <div class="service_box yell_colo">
-                        <i><img src="images/ser6.png" alt="#"/></i>
-                        <h4>Verificaciones y cumplimientos de normativas</h4>
+                     <div class="service_box fade-in fade-in-right yell_colo">
+                       <i><img src="images/ser6.png" alt="#"/></i>
+                       <h4>Verificaciones y cumplimientos de normativas</h4>
                      </div>
-                  </div>
+                   </div>
                </div>
             </div>
          </div>
@@ -404,14 +404,14 @@
             </div>
             <div class="row">
                <div class="col-md-5">
-                  <div class="choose_box">
+                  <div class="choose_box fade-in fade-in-right">
                      <i><img src="images/certificacion.png" alt="#"/></i>
                      <h3>Experiencia y profesionalismo</h3>
                      <p>Contamos con un equipo de técnicos altamente capacitados y con años de experiencia en refrigeración y electricidad. Nuestra trayectoria y conocimiento nos permiten abordar cualquier desafío con precisión y eficiencia, garantizando resultados de alta calidad y un servicio confiable</p>
                   </div>
                </div>
                <div class="col-md-5 offset-md-2">
-                  <div class="choose_box">
+                  <div class="choose_box fade-in fade-in-right">
                      <i><img src="images/soporte-personalizado.png" alt="#"/></i>
                      <h3>Atención personalizada</h3>
                      <p>Entendemos que cada cliente y proyecto es único. Ofrecemos un enfoque personalizado, adaptando nuestras soluciones a las necesidades específicas de cada caso. Desde la instalación hasta el mantenimiento y reparación, trabajamos para asegurar que nuestros servicios se ajusten perfectamente a sus requerimientos y expectativas</p>
@@ -572,6 +572,35 @@
                var url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
                window.location.href = url;
             }
+         });
+      </script>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+         // Selecciona los elementos a observar
+         const targets = document.querySelectorAll("#about.fade-in, .service_box.fade-in, .choose_box.fade-in");
+      
+         // Define la función que será llamada cuando el elemento entre o salga del viewport
+         const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+               if (entry.isIntersecting) {
+               // Añade la clase 'visible' cuando el elemento esté en el viewport
+               entry.target.classList.add("visible");
+               // Deja de observar el elemento si ya se ha visto
+               observer.unobserve(entry.target);
+               }
+            });
+         };
+      
+         // Crea un Intersection Observer
+         const observer = new IntersectionObserver(observerCallback, {
+            root: null, // Usa el viewport del navegador
+            rootMargin: '0px',
+            threshold: 0.5 // Cuánto del elemento debe estar visible para activar la función
+         });
+      
+         // Comienza a observar los elementos
+         targets.forEach(target => observer.observe(target));
          });
       </script>
 
