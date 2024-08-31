@@ -523,6 +523,7 @@ ul.conat_info li a:hover {
 .about {
      background-color: #ffffff;
      margin-top: -160px;
+     overflow-x: hidden;
 }
 
 .about .about_img figure {
@@ -569,6 +570,7 @@ ul.conat_info li a:hover {
 .service_main {
      display: flex;
      flex-wrap: wrap;
+     overflow-x: hidden;
 }
 
 .service_box {
@@ -867,6 +869,7 @@ ul.conat_info li a:hover {
 .choose {
      background-color: #fff;
      padding-top: 90px;
+     overflow-x: hidden;
 }
 
 .choose .titlepage {
@@ -1120,7 +1123,7 @@ ul.location_icon li a:hover {
 .fade-in {
      opacity: 0;
      transition: opacity 1s ease-out, transform 1s ease-out;
-   }
+}
    
    /* Efecto de entrada para #about desde la izquierda */
    .fade-in-left {
