@@ -128,10 +128,19 @@
                                        <div class="col-md-12">
                                           <select class="transfot_form" name="servicio" id="servicio" required>
                                              <option value="" disabled selected>Seleccione un servicio *</option>
-                                             <option value="Instalacion">Instalacion</option>
-                                             <option value="Mantenimiento">Mantenimiento</option>
+                                             <option value="Instalación/Desintalación">Instalación/Desintalación</option>
+                                             <option value="Mantenimiento">Mantenimientos</option>
+                                             <option value="Reparaciones">Reparaciones</option>
+                                             <option value="Diagnóstico">Diagnósticos</option>
+                                             <option value="Calculo de frigorias">Calculo de frigorias</option>
+                                             <option value="Recambio de piezas">Recambios de piezas</option>
                                              <option value="Carga de refrigerantes">Carga de refrigerantes</option>
                                              <option value="Verificaciones">Verificaciones</option>
+                                             <option value="Armado de tablero eléctrico">Armado de tableros eléctricos</option>
+                                             <option value="Medición puesta a tierra">Medición puesta a tierra</option>
+                                             <option value="Cableados y recableado">Cableados y recableado</option>
+                                             <option value="Colocación de artefactos eléctricos">Colocación de artefactos eléctricos</option>
+                                             <option value="Armado de presupuesto">Armado de presupuesto</option>
                                              <option value="Otros">Otros</option>
                                           </select>
                                        </div>
@@ -453,11 +462,20 @@
                            <div class="col-md-12">
                               <select class="transfot_form" name="servicio2" id="servicio2" required>
                                  <option value="" disabled selected>Seleccione un servicio*</option>
-                                 <option value="Instalacion">Instalacion</option>
-                                 <option value="Mantenimiento">Mantenimiento</option>
-                                 <option value="Carga de refrigerantes">Carga de refrigerantes</option>
-                                 <option value="Verificaciones">Verificaciones</option>
-                                 <option value="Otros">Otros</option>
+                                 <option value="Instalación/Desintalación">Instalación/Desintalación</option>
+                                             <option value="Mantenimiento">Mantenimientos</option>
+                                             <option value="Reparaciones">Reparaciones</option>
+                                             <option value="Diagnóstico">Diagnósticos</option>
+                                             <option value="Calculo de frigorias">Calculo de frigorias</option>
+                                             <option value="Recambio de piezas">Recambios de piezas</option>
+                                             <option value="Carga de refrigerantes">Carga de refrigerantes</option>
+                                             <option value="Verificaciones">Verificaciones</option>
+                                             <option value="Armado de tablero eléctrico">Armado de tableros eléctricos</option>
+                                             <option value="Medición puesta a tierra">Medición puesta a tierra</option>
+                                             <option value="Cableados y recableado">Cableados y recableado</option>
+                                             <option value="Colocación de artefactos eléctricos">Colocación de artefactos eléctricos</option>
+                                             <option value="Armado de presupuesto">Armado de presupuesto</option>
+                                             <option value="Otros">Otros</option>
                               </select>
                               
                            </div>
@@ -538,16 +556,16 @@
             if (this.checkValidity()) {
                event.preventDefault(); // Previene el envío del formulario
 
-               var nombre = document.getElementById('nombre').value.trim();
-               var localidad = document.getElementById('localidad').value.trim();
-               var direccion = document.getElementById('direccion').value.trim();
-               var email = document.getElementById('email').value.trim();
-               var servicio = document.getElementById('servicio').value;
+               let nombre = document.getElementById('nombre').value.trim();
+               let localidad = document.getElementById('localidad').value.trim();
+               let direccion = document.getElementById('direccion').value.trim();
+               let email = document.getElementById('email').value.trim();
+               let servicio = document.getElementById('servicio').value;
 
-               var mensaje = `Nombre: ${nombre}%0ALocalidad: ${localidad}%0ADirección: ${direccion}%0AEmail: ${email}%0AServicio: ${servicio}`;
-               var telefono = '541164528889'; // Reemplaza con el número de teléfono de WhatsApp
+               let mensaje = `Hola mi nombre es: ${nombre}, soy de la localidad de: ${localidad}, mi dirección es: ${direccion} y estoy interesad@ en el servicio: ${servicio}. Desde ya muchas gracias.`;
+               let telefono = '541164528889'; 
 
-               var url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+               let url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
                window.location.href = url;
             }
          });
@@ -559,17 +577,17 @@
             if (this.checkValidity()) {
                event.preventDefault(); // Previene el envío del formulario
 
-               var nombre2 = document.getElementById('nombre2').value.trim();
-               var localidad2 = document.getElementById('localidad2').value.trim();
-               var direccion2 = document.getElementById('direccion2').value.trim();
-               var email2 = document.getElementById('email2').value.trim();
-               var servicio2 = document.getElementById('servicio2').value;
+               let nombre2 = document.getElementById('nombre2').value.trim();
+               let localidad2 = document.getElementById('localidad2').value.trim();
+               let direccion2 = document.getElementById('direccion2').value.trim();
+               let email2 = document.getElementById('email2').value.trim();
+               let servicio2 = document.getElementById('servicio2').value;
 
-               // Construir el mensaje para WhatsApp
-               var mensaje = `Nombre: ${nombre2}%0ALocalidad: ${localidad2}%0ADirección: ${direccion2}%0AEmail: ${email2}%0AServicio: ${servicio2}`;
-               var telefono = '541164528889'; // Reemplaza con el número de teléfono de WhatsApp
+             
+               let mensaje = `Hola mi nombre es: ${nombre2}, soy de la localidad de: ${localidad2}, mi dirección es: ${direccion2} y estoy interesad@ en el servicio: ${servicio2}. Desde ya muchas gracias.`;
+               let telefono = '541164528889'; 
 
-               var url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+               let url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
                window.location.href = url;
             }
          });
