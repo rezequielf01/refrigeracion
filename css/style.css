@@ -749,7 +749,6 @@ ul.conat_info li a:hover {
 .testimonial {
      padding: 90px 0 90px 0;
      background-color: #0f98f8;
-     border-radius: 50px;
 }
 
 .testimonial .titlepage {
@@ -759,6 +758,16 @@ ul.conat_info li a:hover {
 
 .testimonial .titlepage h2 {
      color: #fff;
+}
+
+.grade-btn{
+     max-width: 150px;
+     width: 100%;
+     padding: 10px 25px;
+     background: #0c0c0c;
+     color: #f1f1f1;
+     font-size: 17px;
+     letter-spacing: 1px;
 }
 
 .testimonial .titlepage p {
@@ -1000,7 +1009,7 @@ ul.conat_info li a:hover {
 /** footer **/
 
 .footer {
-     background: #f7f7f9;
+     background: #001b44;
      margin-top: 90px;
      padding-top: 90px;
      text-align: center;
@@ -1015,7 +1024,7 @@ ul.location_icon {
 ul.location_icon li {
      font-size: 21px;
      line-height: 30px;
-     color: #353535;
+     color: #f1f1f1;
      text-align: left;
      padding-bottom: 35px;
      float: left;
@@ -1093,7 +1102,7 @@ ul.location_icon li a:hover {
 }
 
 .copyright {
-     background-color: #0f98f8;
+     background-color: black;
      margin-top: 70px;
      padding: 20px 0;
 }
