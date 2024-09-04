@@ -489,6 +489,14 @@ ul.conat_info li a:hover {
      padding: 0;
 }
 
+.titlepage2 h2 {
+     font-size: 50px;
+     color: #f8640f;
+     line-height: 45px;
+     font-weight: bold;
+     padding: 0;
+}
+
 .d_flex {
      display: flex;
      align-items: center;
@@ -561,6 +569,18 @@ ul.conat_info li a:hover {
 }
 
 .service .titlepage p {
+     color: #0c0202;
+     font-size: 17px;
+     line-height: 30px;
+     padding-top: 20px;
+}
+
+.service .titlepage2 {
+     text-align: center;
+     padding-bottom: 30px;
+}
+
+.service .titlepage2 p {
      color: #0c0202;
      font-size: 17px;
      line-height: 30px;
