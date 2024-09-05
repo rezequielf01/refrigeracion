@@ -773,7 +773,7 @@ ul.conat_info li a:hover {
 
 .testimonial .titlepage {
      text-align: center;
-     padding-bottom: 60px;
+     padding-bottom: 0px;
 }
 
 .testimonial .titlepage h2 {
@@ -839,6 +839,9 @@ ul.conat_info li a:hover {
      width: 125px;
      height: 125px;
      max-height: 125px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 
 #myCarousel .carousel-indicators {
